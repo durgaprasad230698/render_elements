@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  return(
+    <div className="Render Element">
+    <h1>Time {new Date().toLocaleTimeString()}</h1>
+    <p>
+      This is called Render method the code will be execute if you can refresh the time will be changes and
+      After changes index.js file time will be continues running
+    </p>
     </div>
   );
-}
+};
 
 export default App;
